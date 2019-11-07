@@ -8,7 +8,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="url-shortener",
-    version="0.0.1",
+    version="0.0.3",
     author="Hasan Budak",
     author_email="budak.hasan.apc@gmail.com",
     description="Get shorted url from a long url string.",
@@ -21,12 +21,12 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    package_dir={"url_shortener": "src"},
+    package_dir={"url_shortener": "url_shortener"},
     python_requires='>=3.0',
     test_suite='tests',
     setup_requires=['wheel'],
     install_requires=[
-        'requests==2.22.0',
+        'requests>=2.0',
     ],
     include_package_data=True
 )
