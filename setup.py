@@ -8,7 +8,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="url-shortener",
-    version="0.0.3",
+    version="0.0.4",
     author="Hasan Budak",
     author_email="budak.hasan.apc@gmail.com",
     description="Get shorted url from a long url string.",
