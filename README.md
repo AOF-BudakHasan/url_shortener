@@ -28,7 +28,7 @@ response, status_code = UrlShorter(selected_adapter).get_short_url('YOUR_LONG_UR
 if status_code == 201:
     # Success response for all adapters will return as tuple
     #     ({'id': 'SHORTED_URL_STRING'}, 201)
-    print("Here your shorted url: {}".format(response['id']))
+    print("Here your shorted url: {shorted_url}".format(shorted_url=response['id']))
 else:
     # Error response for all adapters will return as tuple
     #     (dict(
@@ -37,7 +37,7 @@ else:
     #         errors=[{},{}],
     #         status_code=403 # response.status_code
     #     ), status_code)
-    print("Oops! An error occurred details: {}".format(response['description']))
+    print("Oops! An error occurred details: {message}".format(message=response['description']))
 
 
 ```
