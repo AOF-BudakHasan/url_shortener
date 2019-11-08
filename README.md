@@ -37,7 +37,7 @@ else:
     #         errors=[{},{}],
     #         status_code=403 # response.status_code
     #     ), status_code)
-    print("Oops! An error occurred details: {message}".format(message=response['description']))
+    print("Oops! An error occurred. Details: {message}".format(message=response['description']))
 
 
 ```
